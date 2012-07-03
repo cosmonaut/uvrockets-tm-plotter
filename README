@@ -1,0 +1,28 @@
+uvrockets-tm-plotter
+====================
+
+This program is intended to become a real-time plotter of sub-orbital
+rocket telemetry data via serial (or usb serial) stream. The idea is
+to have a microcontroller or something similar aboard the payload
+keepking track of various voltages, currents, temperatures, and
+pressures which are then sent via serial stream to a computer
+employing this plotter. This will allow easy monitoring of vital
+payload data during tests and potentially during flight with
+configurable graphs and Qt widgets.
+
+
+More info to come later -- this is currently a (working) demo. The
+demo is set to plot afproto packets that have two payload bytes
+representing a 16-bit temperature value as read by an internal AVR
+sensor.
+
+
+dependencies:
+pyqt
+matplotlib
+numpy?
+pyserial
+afproto
+
+
+
